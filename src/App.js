@@ -1,6 +1,7 @@
 import './App.css';
+import EditorSpace from './components/EditorSpace';
 
-function App() {
+const App = () => {
   const something = () =>{
     const invoke = window.__TAURI__.invoke
 
@@ -14,18 +15,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button onClick={something}>hellllo</button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <EditorSpace className="Editor" />
+        <a>hello</a>
       </header>
     </div>
   );

@@ -1,13 +1,15 @@
 import React from "react";
 import Editor from '@monaco-editor/react'
+import './../App.css';
 const EditorSpace = () => {
     return (
         <div>
             <Editor
-            height="90vh"
+            height={window.innerHeight-25}
             width="100%"
-            defaultLanguage="C++"
+            language="cpp"
             theme="vs-dark"
+            loading=""
             ></Editor>
         </div>
     ) 

@@ -1,6 +1,6 @@
 import './App.css';
 import EditorSpace from './components/EditorSpace';
-
+import Header from './components/Header';
 const App = () => {
   const something = () =>{
     const invoke = window.__TAURI__.invoke
@@ -14,9 +14,11 @@ const App = () => {
   }
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="Head">
+        <Header/>
+      </div>
+      <header className="Eye-save">
         <EditorSpace className="Editor" />
-        <a>hello</a>
       </header>
     </div>
   );
